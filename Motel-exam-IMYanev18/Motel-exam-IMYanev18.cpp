@@ -6,9 +6,9 @@ using namespace std;
 
 struct ROOM_PRICING
 {
-    int singleRoomPrice = 50;
-    int doubleRoomPrice = 90;
-    int maisonettePrice = 135;
+    int singleRoomPrice;
+    int doubleRoomPrice;
+    int maisonettePrice;
 
 };
 
@@ -19,14 +19,18 @@ public:
     ROOM_PRICING getRoomPricing()
     {
         ROOM_PRICING pric;
-        vector<ROOM_PRICING> prices;
-        
+        pric.singleRoomPrice = 50;
+        pric.doubleRoomPrice = 90;
+        pric.maisonettePrice = 135;
+        return pric;        
     }
 
 
     string rentRoom(string clientName,string roomType,int numberOfNights)
     {
-        
+        cin >> clientName;
+        cin >> roomType;
+        cin >> numberOfNights;
     }
 
 
